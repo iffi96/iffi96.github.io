@@ -1,11 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Irfan CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#topAnchor').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#top").offset().top
+                }, 1500)
+            }),
+                $('#educationAnchor').click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#education").offset().top
+                    }, 1500)
+                }),
+                $('#skillsAnchor').click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#skills").offset().top
+                    }, 1500)
+                }),
+                $('#projectAnchor').click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#project").offset().top
+                    }, 1500)
+                }),
+                $('#achievementAnchor').click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#achievement").offset().top
+                    }, 1500)
+                })
+        });
+    </script>
+
+    <!-- top -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <style>
+        #top {
+            width: 100wh;
+            /* height: 90vh; */
+            color: #fff;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 15s ease infinite;
+            animation: Gradient 15s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        h1,
+        h6 {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            text-align: center;
+            position: absolute;
+            top: 45%;
+            right: 0;
+            left: 0;
+        }
+    </style>
+
+    <!-- custom CSS -->
+    <style>
+        .navBar {
+            background-color: rgb(52, 51, 52);
+            padding: 10px;
+        }
+
+        a {
+            color: rgb(192, 189, 183);
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        #project {
+            margin-top: -55px;
+            /* Size of fixed header */
+            padding-top: 50px;
+            /* display: block; */
+        }
+
+        #skills {
+            margin-top: -55px;
+            /* Size of fixed header */
+            padding-top: 50px;
+            /* display: block; */
+        }
+
+        #education {
+            margin-top: -55px;
+            /* Size of fixed header */
+            padding-top: 50px;
+            /* display: block; */
+        }
+
+        #achievement {
+            margin-top: -55px;
+            /* Size of fixed header */
+            padding-top: 50px;
+            /* display: block; */
+        }
+    </style>
 </head>
+
 <body>
-    <h1>irfan</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="container-fuild navBar fixed-top text-center">
+        <a href="#top" id="topAnchor"> IRFAN AHMED</a>
+        <a href="#education" id="educationAnchor"> Education</a>
+        <!-- <a href="#skills" id="skillsAnchor"> Skills</a> -->
+        <a href="#project" id="projectAnchor"> Projects</a>
+        <a href="#achievement" id="achievementAnchor"> Achievements</a>
+        <a href="https://github.com/iffi96" target="_blank" style="color: red;"> GitHub</a>
+        <a href="https://www.linkedin.com/in/irfan-ahmed-web/" target="_blank" style="color: green;"> LinkedIn</a>
+        <a href="./irfan-resume.pdf" target="_blank" style="color: blue;"> <i class="fa fa-download"></i> CV </a>
+    </nav>
+
+    <!-- Top -->
+    <div class="container-fluid" id="top">
+        <br><br><br><br>
+        <img src="./dp.jpg" class="rounded-circle mx-auto d-block img-fluid  wow fadeInUp" alt="Cinque Terre"
+            width="200">
+        <div class="d-flex justify-content-center  wow fadeInDown">
+            <h3>Irfan Ahmed</h3>
+        </div>
+        <div class="text-center wow fadeInDown">irfanahmed_1996@yahoo.com </div>
+        <div class="d-flex justify-content-center wow fadeInDown">
+            <h5>Looking for Job Opportunity</h5>
+        </div>
+        <br><br>
+        <hr />
+    </div>
+    <br><br>
+    <!-- Education -->
+    <div class="container-fluid" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 wow fadeInLeft text-center ">
+                    <h4>Education:</h4>
+                    <br/> 
+                </div>
+                <div class="col-md-8 wow fadeInLeft text-center ">
+                    <h4>Courses:</h4>
+                    <br/> 
+                </div>
+                <div class="col-md-4 wow fadeInLeft text-center">
+                    <h5>BS Computer Science</h5>
+                    <span>IQRA University - IU, Karachi</span>
+                    <p>2015-2019 - 3.21 CGPA</p>
+                </div>
+                <div class="col-md-4 wow fadeInLeft text-center">
+                    <h5>Web App dev.</h5>
+                    <span>UIT,Karachi.</span>
+                    <p>2017-2018</p>
+                </div>
+                <div class="col-md-4 wow fadeInLeft text-center">
+                    <h5>Cloud Native Computing</h5>
+                    <span>PIAIC.</span>
+                    <p>2019-Present</p>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <br/> <br/> <br/> 
+    <!-- Projects -->
+    <div class="container-fluid" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center wow fadeInUp">PROJECTS</h4> <br>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>DashBoard (ReactJS)</h5>
+                    <img src="./dashboard.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a dashboard on ReactJS using bootstrap, fusionchart and fetching data from google spreadsheet and populate the data into graph. </p>
+                    <br />
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('https://1wyps.csb.app/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Dashboard-ReactJS');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Dorsin - Landing Page (ReactJS) </h5>
+                    <img src="./dorsin-clone.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a tiny short animation web design using ReactJS, It is clone of dorsin landing page Front-End Development. </p>
+                    <br/>
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('http://tiny-web-animation-irfan.surge.sh/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Tiny-Short-Application-Web-Design');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                   
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Quiz App (ReactJS)</h5>
+                    <img src="./quizapp.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a Quiz App by fetching quiz data from API on ReactJS, Material UI and Typescript.</p>
+                    <br/><br/>
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('http://quiz-app-irfan.surge.sh/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Quiz-App-Reactjs');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>COVID-19 App (ReactJS)</h5>
+                    <img src="./covid19.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a covid 19 ReactJS app that will show real time data of covid cases through different APIs, with the help of Axios, Material UI, ChartJS, react-countup, react hooks.</p>
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('http://covid-19-app-irfan.surge.sh/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Covid-19-React-App');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Shoe Store (ReactJS)</h5>
+                    <img src="./shoestore.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a Shoe Store front-end design by fetching products from API on ReactJS by using material UI libaray. </p>
+                    <br/>
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('http://shoe-store-app-irfan.surge.sh/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Shoe-Store-React-App');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Expense Tracking (ReactJS)</h5>
+                    <img src="./expensetracking.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>Created a Expense Tracking App to track all incomes and expenses on ReactJS by contextAPI, useState, useContext, useReducer and material UI </p>
+                    <br/>
+                    <div class="text-center">
+                        <button class="btn btn-success col-md-5" onclick="window.open('http://expense-tracker-app-irfan.surge.sh/');">
+                            Visit</button>
+                        <button class="btn btn-danger col-md-5" onclick="window.open('https://github.com/iffi96/Expense-Tracking-React-App');">
+                                GitHub</button>
+                                <br/><br/><br/>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>File Sharing App</h5>
+                    <img src="./iufile.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>This file sharing app is created using HTML,CSS,JS,Firebase. </p>
+                    <button class="btn btn-primary btn-block" onclick="window.open('https://iu-file.firebaseapp.com');">
+                        Visit</button>
+                    <br>
+                </div>
+               
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Connect Website</h5>
+                    <img src="./connect.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>This project is created for WPL course final project. (front-end only)</p>
+                    <button class="btn btn-primary btn-block"
+                        onclick="window.open('https://irfan-connect.firebaseapp.com');"> Visit</button>
+                    <br>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>E-Commerce Website</h5>
+                    <img src="./ecommerce.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>This project is created for SE course final project.(front-end only)</p>
+                    <button class="btn btn-primary btn-block"
+                        onclick="window.open('https://irfan-ecommerce.firebaseapp.com');"> Visit</button>
+                    <br>
+                </div>
+
+                <div class="col-md-12">
+                    <br>
+                </div>
+
+
+                <div class="col-md-4 wow fadeInUp">
+                  
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h5>Todo App</h5>
+                    <img src="./todoapp.png" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p>This is Basic Todo app, created using HTML,CSS,JS,Firebase. </p>
+                    <button class="btn btn-primary btn-block"
+                        onclick="window.open('https://irfan-todoapp.firebaseapp.com');"> Visit</button>
+                    <br>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                   
+                </div>
+
+                <div class="col-md-12 wow fadeInRight">
+                    <h5>Other Projects: </h5>
+                    <ul>
+                        <li>E-Commerce Website on PHP ( CRUD Operation )</li>
+                        <li>Angular Todo App</li>
+                        <li>Ionic Todo App</li>
+                        <li>React-native Todo App</li>
+                        <li>C# Library Management System (windowForms)</li>
+                        <li>Home Automation - Arduino controlled by C# Application (windowForms) </li>
+                        <li>Basic Voice Controller C# (windowForms)</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr />
+
+        </div>
+
+    </div>
+
+    <!-- Achievement -->
+    <div class="container-fluid" id="achievement">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeInDown">
+                    <h4>Achievements</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4></h4>
+                </div>
+                <div class="col-md-4 text-center wow fadeInDown">
+                    <h5>COMFEST'17 - Web Desgining (Winner)</h5>
+                    <img src="./comfest.jpg" class="rounded mx-auto d-block img-fluid" alt="Cinque Terre">
+                    <p></p>
+                    <button class="btn btn-success btn-block" onclick="window.open('./comfest.jpg');">
+                        Open Full Image</button>
+                    <br>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="container-fluid" style="background-color:black;padding-bottom: 5px; color: white; font-weight: bold;">
+        <hr />
+        <div class="row">
+            <div class="col-md-12 text-center">
+                Designed by Irfan Ahmed. @2020
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
